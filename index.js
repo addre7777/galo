@@ -15,7 +15,7 @@
 
 window.onload = function() {
 var Run = null;
-var FlySpeed = 1.6;
+var FlySpeed = 1.2;
 
 //获取背景元素
 var _background = document.querySelector('.background');
@@ -32,7 +32,7 @@ var upward = 28;
 var galoImgArr = document.querySelectorAll('.galo img');
 //获取水管元素
 var pipeRun = false;
-var pipeArea = 24;  //通过空间百分比
+var pipeArea = 26;  //通过空间百分比
 var pipeBoxs = document.querySelectorAll('.pipeBox');
 //碰撞字段
 var frontPipe = 0;  //记录galo面前的水管
@@ -156,7 +156,7 @@ function Update(){
 		IsFall = true;
 	}
 	galo.style.top = galo.offsetTop + power +'px';
-	upward -= 0.5;
+	upward -= 0.35;
 
 	//碰撞-----------------------------------------------------------------------------------------------
 	//上下边碰撞
@@ -206,7 +206,7 @@ function Update(){
 		 sum++;
 		 sumBox.innerHTML = sum;
 		 FlySpeed += 0.01;
-		 pipeArea += 0.02;
+		 pipeArea -= 0.01;
 	 }
 
 }
@@ -270,7 +270,7 @@ function pause(){
 }
 
 function StartForPause(){
-	Run = window.setInterval(Update,20);
+	Run = window.setInterval(Update,15);
 	galoMove = window.setInterval(galoAnima,200);
 	bgm.play();
 	
@@ -286,7 +286,7 @@ function GameStart(){
 function GameDefault()
 {
 	Run = null;
-	FlySpeed = 1.6;
+	FlySpeed = 1.2;
 	floorRun = true;
 	galoMove = null;
 	animaIdex = 0;
@@ -294,7 +294,7 @@ function GameDefault()
 	galoWeight = 20;
 	upward = 28;
 	pipeRun = false;
-	pipeArea = 24;  //通过空间百分比
+	pipeArea = 26;  //通过空间百分比
 	frontPipe = 0;  //记录galo面前的水管
 	sum = 0;
 	sumBox.innerHTML = sum;
