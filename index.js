@@ -256,7 +256,7 @@ function End(){
 }
 
 function pause(){
-	if(Run)
+	/*if(Run)
 	{
 		window.clearInterval(Run);
 	}
@@ -265,7 +265,7 @@ function pause(){
 		window.clearInterval(galoMove);
 	}
 	Run = null;
-	bgm.pause();
+	bgm.pause();*/
 	
 }
 
