@@ -239,7 +239,7 @@ function Update(){
 	})
 })();
 function End(){
-	if(Run)
+	/*if(Run)
 	{
 		window.clearInterval(Run);
 	}
@@ -251,12 +251,12 @@ function End(){
 	bgm.pause();
 	galoDeathAnima();
 	NumArr.push(sum);
-	window.setTimeout(menuShow,1000);
+	window.setTimeout(menuShow,1000);*/
 	
 }
 
 function pause(){
-	/*if(Run)
+	if(Run)
 	{
 		window.clearInterval(Run);
 	}
@@ -265,7 +265,7 @@ function pause(){
 		window.clearInterval(galoMove);
 	}
 	Run = null;
-	bgm.pause();*/
+	bgm.pause();
 	
 }
 
