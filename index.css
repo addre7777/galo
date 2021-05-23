@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	
+}
+
+
+body {
+	background-color: black;
+}
+
+
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	margin: 0 auto;
+	/*border: 5px solid green;*/
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.background {
+	position: absolute;
+	 background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+	-webkit-background-size: auto 100%; 
+    -moz-background-size: auto 100%;
+	background-image: url(pic/background1.jpg);
+	background-position: center;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.floor {
+	position: absolute;
+	width: 100%;
+	bottom: -200px;
+	z-index: 3;
+}
+
+.floorA {
+	left: 0px;
+}
+.floorB {
+	left: 100%;
+}
+
+.galo {
+	position: absolute;
+	left: 16%;
+	top: 40%;
+	width: 12%;
+	z-index: 5;
+}
+
+.galo .galoRigidbody {
+	position: absolute;
+	left: 20%;
+	top: 15%;
+	width: 60%;
+	height: 20px;
+}
+
+.pipeBox {
+	position: absolute;
+	left: 25%;
+	width: 16%;
+	height: 100%;
+	z-index: 2;
+}
+.pipe {
+	position: absolute;
+	top: 80%;
+	width: 100%;
+}
+.pipe180 {
+	position: absolute;
+	top: -70%;
+	width: 100%;
+}
+
+.sum {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 15%;
+	transform: translate(-50%,0);
+	text-align: center;
+	z-index: 11;
+	color: white;
+}
+
+.menuBox {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 100;
+}
+.menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	height: 50%;
+	background-color: #FFFACD;
+	box-shadow: 0px 0px 10px 5px rgba(50,50,50,0.9);
+	text-align: center;
+	color: skyblue;
+}
+.menu input {
+	width: 60%;
+	height: 20%;
+	font-size: 20px;
+	margin-top: 50px; 
+	
+}
