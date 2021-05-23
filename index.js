@@ -165,12 +165,12 @@ function Update(){
 	if((galo.offsetTop + galoRigidbody.offsetTop) < 0)
 	{
 		galo.style.top = 0;
-		 End();
+		 //End();
 	}
 	 else if((galo.offsetTop + galoRigidbody.offsetHeight) > _background.offsetHeight)
 	{
 		galo.style.top = _background.offsetHeight - galoRigidbody.offsetHeight - 10 + 'px';
-		 End();
+		// End();
 	}
 	 //------水管碰撞-------------------------------
 	 var x = 0, y = 0;//记录两矩形边长的和
@@ -196,7 +196,7 @@ function Update(){
 	  zy = Math.abs(y01 + y02 - y11 - y12);
 	  if(zx <= x && zy <= y)
 	 {
-		 End();
+		// End();
 	 }
 	 
 	 //-----------------------计数和难度提升-------------------------------------------
@@ -239,7 +239,7 @@ function Update(){
 	})
 })();
 function End(){
-	/*if(Run)
+	if(Run)
 	{
 		window.clearInterval(Run);
 	}
@@ -251,7 +251,7 @@ function End(){
 	bgm.pause();
 	galoDeathAnima();
 	NumArr.push(sum);
-	window.setTimeout(menuShow,1000);*/
+	window.setTimeout(menuShow,1000);
 	
 }
 
